@@ -24,7 +24,7 @@ window = Tk()
 window.geometry("800x396")
 window.configure(bg = "#202020")
 window.overrideredirect(True)
-icon = tkinter.PhotoImage(file="./assets/frame0/button_5.png")
+icon = tkinter.PhotoImage(file="./assets/favicon.png")
 icon = window.iconphoto(True, icon) #Ikonfotó definiálása
 
 

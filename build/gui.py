@@ -9,6 +9,7 @@ from pathlib import Path
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+from links import inftab
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path("./assets/frame0")
@@ -22,7 +23,7 @@ window = Tk()
 window.geometry("769x705")
 window.configure(bg = "#202020")
 window.overrideredirect(True)
-icon = tkinter.PhotoImage(file="./assets/frame0/button_5.png")
+icon = tkinter.PhotoImage(file="./assets/favicon.png")
 icon = window.iconphoto(True, icon) #Ikonfotó definiálása
 
 
@@ -372,7 +373,7 @@ button_15 = Button(
     image=button_image_15,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_15 clicked"),
+    command=lambda: inftab(),
     relief="flat"
 )
 button_15.place(

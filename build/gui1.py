@@ -9,6 +9,9 @@ from pathlib import Path
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+from tkinter import font
+from links import *
+
 
 
 OUTPUT_PATH = Path(__file__).parent
@@ -20,11 +23,10 @@ def relative_to_assets(path: str) -> Path:
 
 
 window = Tk()
-
 window.geometry("525x582")
 window.configure(bg = "#202020")
 window.overrideredirect(True)
-icon = tkinter.PhotoImage(file="./assets/frame0/button_5.png")
+icon = tkinter.PhotoImage(file="./assets/favicon.png")
 icon = window.iconphoto(True, icon) #Ikonfotó definiálása
 
 
@@ -79,7 +81,7 @@ canvas.create_text(
     106.0,
     358.0,
     anchor="nw",
-    text="mark.nemoda@outlook.com",
+    text="patrik.padar@gmail.com",
     fill="#FFCF00",
     font=("RacingSansOne Regular", 15 * -1)
 )
@@ -88,7 +90,7 @@ canvas.create_text(
     106.0,
     483.0,
     anchor="nw",
-    text="mark.nemoda@outlook.com",
+    text="farkasberta14@gmail.com",
     fill="#FFCF00",
     font=("RacingSansOne Regular", 15 * -1)
 )
@@ -143,7 +145,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_1 clicked"),
+    command=lambda: open_fb_mark(),
     relief="flat"
 )
 button_1.place(
@@ -159,7 +161,7 @@ button_2 = Button(
     image=button_image_2,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_2 clicked"),
+    command=lambda: open_lnkd_mark(),
     relief="flat"
 )
 button_2.place(
@@ -175,7 +177,7 @@ button_3 = Button(
     image=button_image_3,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_3 clicked"),
+    command=lambda: open_github_brigi(),
     relief="flat"
 )
 button_3.place(
@@ -191,7 +193,7 @@ button_4 = Button(
     image=button_image_4,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_4 clicked"),
+    command=lambda: open_fb_brigi(),
     relief="flat"
 )
 button_4.place(
@@ -239,7 +241,7 @@ button_7 = Button(
     image=button_image_7,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_7 clicked"),
+    command=lambda: open_fb_patrik(),
     relief="flat"
 )
 button_7.place(
@@ -271,7 +273,7 @@ button_9 = Button(
     image=button_image_9,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_9 clicked"),
+    command=lambda: open_github_levente(),
     relief="flat"
 )
 button_9.place(
@@ -287,7 +289,7 @@ button_10 = Button(
     image=button_image_10,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_10 clicked"),
+    command=lambda: open_fb_levente(),
     relief="flat"
 )
 button_10.place(
@@ -303,7 +305,7 @@ button_11 = Button(
     image=button_image_11,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_11 clicked"),
+    command=lambda: open_lnkd_levente(),
     relief="flat"
 )
 button_11.place(
@@ -335,7 +337,7 @@ button_13 = Button(
     image=button_image_13,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_13 clicked"),
+    command=lambda: open_mail_mark(),
     relief="flat"
 )
 button_13.place(
@@ -351,7 +353,7 @@ button_14 = Button(
     image=button_image_14,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_14 clicked"),
+    command=lambda: open_mail_levente(),
     relief="flat"
 )
 button_14.place(
@@ -367,7 +369,7 @@ button_15 = Button(
     image=button_image_15,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_15 clicked"),
+    command=lambda: open_mail_brigi(),
     relief="flat"
 )
 button_15.place(
@@ -383,7 +385,7 @@ button_16 = Button(
     image=button_image_16,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_16 clicked"),
+    command=lambda: open_mail_patrik(),
     relief="flat"
 )
 button_16.place(
@@ -399,7 +401,7 @@ button_17 = Button(
     image=button_image_17,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_17 clicked"),
+    command=lambda: open_github_mark(),
     relief="flat"
 )
 button_17.place(

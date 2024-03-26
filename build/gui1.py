@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/Users/rezlevente/Developer/Buvos26_Beta/build/assets/frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/Users/rezlevente/Developer/Buvos26_Beta/build/assets/frame1")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -20,15 +20,15 @@ def relative_to_assets(path: str) -> Path:
 
 window = Tk()
 
-window.geometry("769x705")
+window.geometry("525x582")
 window.configure(bg = "#202020")
 
 
 canvas = Canvas(
     window,
     bg = "#202020",
-    height = 705,
-    width = 769,
+    height = 582,
+    width = 525,
     bd = 0,
     highlightthickness = 0,
     relief = "ridge"
@@ -38,106 +38,99 @@ canvas.place(x = 0, y = 0)
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
-    384.0,
+    262.0,
     43.0,
     image=image_image_1
 )
 
-canvas.create_rectangle(
-    285.0,
-    142.0,
-    384.0,
-    242.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    41.0,
+    205.0,
+    anchor="nw",
+    text="Tagjaink:",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 24 * -1)
+)
 
-canvas.create_rectangle(
-    408.0,
-    142.0,
-    507.0,
-    242.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    74.0,
+    270.0,
+    anchor="nw",
+    text="Nemoda Márk",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 24 * -1)
+)
 
-canvas.create_rectangle(
-    285.0,
-    508.0,
-    384.0,
-    608.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    106.0,
+    296.0,
+    anchor="nw",
+    text="mark.nemoda@outlook.com",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 15 * -1)
+)
 
-canvas.create_rectangle(
-    408.0,
-    508.0,
-    507.0,
-    608.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    106.0,
+    358.0,
+    anchor="nw",
+    text="mark.nemoda@outlook.com",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 15 * -1)
+)
 
-canvas.create_rectangle(
-    285.0,
-    264.0,
-    384.0,
-    364.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    106.0,
+    483.0,
+    anchor="nw",
+    text="mark.nemoda@outlook.com",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 15 * -1)
+)
 
-canvas.create_rectangle(
-    408.0,
-    264.0,
-    507.0,
-    364.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    106.0,
+    422.0,
+    anchor="nw",
+    text="info@rezlevente.hu",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 15 * -1)
+)
 
-canvas.create_rectangle(
-    285.0,
-    386.0,
-    384.0,
-    486.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    74.0,
+    325.0,
+    anchor="nw",
+    text="Patrik Pádár",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 24 * -1)
+)
 
-canvas.create_rectangle(
-    408.0,
-    386.0,
-    507.0,
-    486.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    74.0,
+    389.0,
+    anchor="nw",
+    text="Réz Levente",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 24 * -1)
+)
 
-canvas.create_rectangle(
-    162.0,
-    264.0,
-    261.0,
-    364.0,
-    fill="#202020",
-    outline="")
+canvas.create_text(
+    73.0,
+    446.0,
+    anchor="nw",
+    text="Szabó Brigitta",
+    fill="#FFCF00",
+    font=("RacingSansOne Regular", 24 * -1)
+)
 
-canvas.create_rectangle(
-    162.0,
-    386.0,
-    261.0,
-    486.0,
-    fill="#202020",
-    outline="")
-
-canvas.create_rectangle(
-    531.0,
-    264.0,
-    630.0,
-    364.0,
-    fill="#202020",
-    outline="")
-
-canvas.create_rectangle(
-    531.0,
-    386.0,
-    630.0,
-    486.0,
-    fill="#202020",
-    outline="")
+image_image_2 = PhotoImage(
+    file=relative_to_assets("image_2.png"))
+image_2 = canvas.create_image(
+    263.0,
+    170.0,
+    image=image_image_2
+)
 
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
@@ -149,10 +142,10 @@ button_1 = Button(
     relief="flat"
 )
 button_1.place(
-    x=285.0,
-    y=142.0,
-    width=99.0,
-    height=100.0
+    x=411.0,
+    y=276.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_2 = PhotoImage(
@@ -165,10 +158,10 @@ button_2 = Button(
     relief="flat"
 )
 button_2.place(
-    x=408.0,
-    y=142.0,
-    width=99.0,
-    height=100.0
+    x=455.0,
+    y=276.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_3 = PhotoImage(
@@ -181,10 +174,10 @@ button_3 = Button(
     relief="flat"
 )
 button_3.place(
-    x=285.0,
-    y=508.0,
-    width=99.0,
-    height=100.0
+    x=367.0,
+    y=461.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_4 = PhotoImage(
@@ -197,10 +190,10 @@ button_4 = Button(
     relief="flat"
 )
 button_4.place(
-    x=408.0,
-    y=508.0,
-    width=99.0,
-    height=100.0
+    x=411.0,
+    y=461.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_5 = PhotoImage(
@@ -213,10 +206,10 @@ button_5 = Button(
     relief="flat"
 )
 button_5.place(
-    x=285.0,
-    y=386.0,
-    width=99.0,
-    height=100.0
+    x=455.0,
+    y=461.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_6 = PhotoImage(
@@ -229,10 +222,10 @@ button_6 = Button(
     relief="flat"
 )
 button_6.place(
-    x=285.0,
-    y=264.0,
-    width=99.0,
-    height=100.0
+    x=367.0,
+    y=341.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_7 = PhotoImage(
@@ -245,10 +238,10 @@ button_7 = Button(
     relief="flat"
 )
 button_7.place(
-    x=408.0,
-    y=386.0,
-    width=99.0,
-    height=100.0
+    x=411.0,
+    y=341.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_8 = PhotoImage(
@@ -261,10 +254,10 @@ button_8 = Button(
     relief="flat"
 )
 button_8.place(
-    x=408.0,
-    y=264.0,
-    width=99.0,
-    height=100.0
+    x=455.0,
+    y=341.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_9 = PhotoImage(
@@ -277,10 +270,10 @@ button_9 = Button(
     relief="flat"
 )
 button_9.place(
-    x=531.0,
-    y=386.0,
-    width=99.0,
-    height=100.0
+    x=367.0,
+    y=406.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_10 = PhotoImage(
@@ -293,10 +286,10 @@ button_10 = Button(
     relief="flat"
 )
 button_10.place(
-    x=531.0,
-    y=264.0,
-    width=99.0,
-    height=100.0
+    x=411.0,
+    y=406.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_11 = PhotoImage(
@@ -309,10 +302,10 @@ button_11 = Button(
     relief="flat"
 )
 button_11.place(
-    x=162.0,
-    y=386.0,
-    width=99.0,
-    height=100.0
+    x=455.0,
+    y=406.0,
+    width=30.0,
+    height=30.0
 )
 
 button_image_12 = PhotoImage(
@@ -325,10 +318,10 @@ button_12 = Button(
     relief="flat"
 )
 button_12.place(
-    x=162.0,
-    y=264.0,
-    width=99.0,
-    height=100.0
+    x=485.0,
+    y=7.0,
+    width=32.0,
+    height=30.0
 )
 
 button_image_13 = PhotoImage(
@@ -341,10 +334,10 @@ button_13 = Button(
     relief="flat"
 )
 button_13.place(
-    x=695.0,
-    y=94.0,
-    width=56.0,
-    height=56.0
+    x=75.0,
+    y=296.0,
+    width=27.0,
+    height=21.0
 )
 
 button_image_14 = PhotoImage(
@@ -357,10 +350,10 @@ button_14 = Button(
     relief="flat"
 )
 button_14.place(
-    x=736.0,
-    y=6.0,
-    width=32.0,
-    height=30.0
+    x=75.0,
+    y=422.0,
+    width=27.0,
+    height=21.0
 )
 
 button_image_15 = PhotoImage(
@@ -373,10 +366,42 @@ button_15 = Button(
     relief="flat"
 )
 button_15.place(
-    x=630.0,
-    y=608.0,
-    width=132.0,
-    height=86.0
+    x=75.0,
+    y=483.0,
+    width=27.0,
+    height=21.0
+)
+
+button_image_16 = PhotoImage(
+    file=relative_to_assets("button_16.png"))
+button_16 = Button(
+    image=button_image_16,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_16 clicked"),
+    relief="flat"
+)
+button_16.place(
+    x=75.0,
+    y=361.0,
+    width=27.0,
+    height=21.0
+)
+
+button_image_17 = PhotoImage(
+    file=relative_to_assets("button_17.png"))
+button_17 = Button(
+    image=button_image_17,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_17 clicked"),
+    relief="flat"
+)
+button_17.place(
+    x=367.0,
+    y=276.0,
+    width=30.0,
+    height=30.0
 )
 window.resizable(False, False)
 window.mainloop()

@@ -8,6 +8,5 @@ def generate_numbers():
             break
     return numbers
 
-for i in range(3):
-    random_numbers = generate_numbers()
-    print("Random numbers with sum 26 (Invite", i+1, "):", random_numbers)
+random_numbers = generate_numbers()
+print("Random numbers with sum 26:", random_numbers)

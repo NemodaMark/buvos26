@@ -26,7 +26,43 @@ window.overrideredirect(True)
 icon = tkinter.PhotoImage(file="./assets/favicon.png")
 icon = window.iconphoto(True, icon) #Ikonfotó definiálása
 
+import subprocess
+import re
 
+# Replace 'your_script.py' with the path to your Python file
+script_path = '../generating/26-random.py'
+
+# List to store all sets of random numbers
+all_random_numbers = []
+
+# Run the script three times and capture the outputs
+for i in range(3):
+    result = subprocess.run(['python', script_path], capture_output=True, text=True)
+
+    # Check if the script ran successfully
+    if result.returncode == 0:
+        print(f"Script {i + 1} executed successfully!")
+        print("Output:")
+        print(result.stdout)
+
+        # Extract random numbers from the output using regular expression
+        match = re.search(r'\[(.*?)\]', result.stdout)
+        if match:
+            random_numbers_str = match.group(1)
+            random_numbers = tuple(int(num) for num in random_numbers_str.split(','))
+            print(f"Random numbers for Invite {i + 1}:", random_numbers)  # Print extracted random numbers for debugging
+
+            # Append random numbers to the list
+            all_random_numbers.append(random_numbers)
+
+            # Print invitation numbers and corresponding random numbers
+            print(f"inv{i + 1} | number {random_numbers[0]}")
+    else:
+        print(f"Error running script {i + 1}:")
+        print(result.stderr)
+
+# Print all random numbers in a multi-list format
+print("All random numbers:", all_random_numbers)
 
 canvas = Canvas(
     window,
@@ -146,7 +182,8 @@ canvas.create_rectangle(
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
 button_1 = Button(
-    image=button_image_1,
+    text=all_random_numbers[0][0],
+    background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_1 clicked"),
@@ -162,7 +199,8 @@ button_1.place(
 button_image_2 = PhotoImage(
     file=relative_to_assets("button_2.png"))
 button_2 = Button(
-    image=button_image_2,
+    text=all_random_numbers[0][1],
+    background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_2 clicked"),
@@ -178,7 +216,8 @@ button_2.place(
 button_image_3 = PhotoImage(
     file=relative_to_assets("button_3.png"))
 button_3 = Button(
-    image=button_image_3,
+    text=all_random_numbers[0][2],
+    background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_3 clicked"),
@@ -194,7 +233,8 @@ button_3.place(
 button_image_4 = PhotoImage(
     file=relative_to_assets("button_4.png"))
 button_4 = Button(
-    image=button_image_4,
+    text=all_random_numbers[0][3],
+    background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_4 clicked"),
@@ -210,7 +250,8 @@ button_4.place(
 button_image_5 = PhotoImage(
     file=relative_to_assets("button_5.png"))
 button_5 = Button(
-    image=button_image_5,
+    text=all_random_numbers[1][0],
+    background='#EF476F',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_5 clicked"),
@@ -226,7 +267,8 @@ button_5.place(
 button_image_6 = PhotoImage(
     file=relative_to_assets("button_6.png"))
 button_6 = Button(
-    image=button_image_6,
+    text=all_random_numbers[1][1],
+    background='#EF476F',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_6 clicked"),
@@ -242,7 +284,8 @@ button_6.place(
 button_image_7 = PhotoImage(
     file=relative_to_assets("button_7.png"))
 button_7 = Button(
-    image=button_image_7,
+    text=all_random_numbers[1][2],
+    background='#EF476F',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_7 clicked"),
@@ -258,7 +301,8 @@ button_7.place(
 button_image_8 = PhotoImage(
     file=relative_to_assets("button_8.png"))
 button_8 = Button(
-    image=button_image_8,
+    text=all_random_numbers[1][3],
+    background='#EF476F',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_8 clicked"),
@@ -274,7 +318,8 @@ button_8.place(
 button_image_9 = PhotoImage(
     file=relative_to_assets("button_9.png"))
 button_9 = Button(
-    image=button_image_9,
+    text=all_random_numbers[2][0],
+    background='#06D6A0',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_9 clicked"),
@@ -290,7 +335,8 @@ button_9.place(
 button_image_10 = PhotoImage(
     file=relative_to_assets("button_10.png"))
 button_10 = Button(
-    image=button_image_10,
+    text=all_random_numbers[2][1],
+    background='#06D6A0',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_10 clicked"),
@@ -306,7 +352,8 @@ button_10.place(
 button_image_11 = PhotoImage(
     file=relative_to_assets("button_11.png"))
 button_11 = Button(
-    image=button_image_11,
+    text=all_random_numbers[2][2],
+    background='#06D6A0',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_11 clicked"),
@@ -322,7 +369,8 @@ button_11.place(
 button_image_12 = PhotoImage(
     file=relative_to_assets("button_12.png"))
 button_12 = Button(
-    image=button_image_12,
+    text=all_random_numbers[2][2],
+    background='#06D6A0',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_12 clicked"),

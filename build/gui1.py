@@ -225,7 +225,7 @@ button_6 = Button(
     image=button_image_6,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_6 clicked"),
+    command=lambda: notfound(),
     relief="flat"
 )
 button_6.place(
@@ -257,7 +257,7 @@ button_8 = Button(
     image=button_image_8,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_8 clicked"),
+    command=lambda: notfound(),
     relief="flat"
 )
 button_8.place(
@@ -337,7 +337,7 @@ button_13 = Button(
     image=button_image_13,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: open_mail_mark(),
+    command=lambda: open_mail_mark("Megkeresés - Bűvös26"),
     relief="flat"
 )
 button_13.place(
@@ -353,7 +353,7 @@ button_14 = Button(
     image=button_image_14,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: open_mail_levente(),
+    command=lambda: open_mail_levente("Megkeresés - Bűvös26"),
     relief="flat"
 )
 button_14.place(
@@ -369,7 +369,7 @@ button_15 = Button(
     image=button_image_15,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: open_mail_brigi(),
+    command=lambda: open_mail_brigi("Megkeresés - Bűvös26"),
     relief="flat"
 )
 button_15.place(
@@ -385,7 +385,7 @@ button_16 = Button(
     image=button_image_16,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: open_mail_patrik(),
+    command=lambda: open_mail_patrik("Megkeresés - Bűvös26"),
     relief="flat"
 )
 button_16.place(

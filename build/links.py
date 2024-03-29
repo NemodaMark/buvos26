@@ -1,5 +1,6 @@
 import webbrowser
 import subprocess
+import os # 404 Page-hez
 def open_github_mark():
     url = "https://github.com/NemodaMark"
     webbrowser.open_new(url)
@@ -37,23 +38,32 @@ def open_lnkd_levente():
     webbrowser.open_new(url)
 
 #LEVELEZÉS
-def open_mail_mark():
+def open_mail_mark(subject):
     email_address = "mark.nemoda@outlook.com"
-    webbrowser.open("mailto:" + email_address)
+    webbrowser.open("mailto:" + email_address + "?subject=" + subject)
 
-def open_mail_levente():
+def open_mail_levente(subject):
     email_address = "info@rezlevente.hu"
-    webbrowser.open("mailto:" + email_address)
+    webbrowser.open("mailto:" + email_address + "?subject=" + subject)
 
 
-def open_mail_brigi():
+def open_mail_brigi(subject):
     email_address = "farkasberta14@gmail.com"
-    webbrowser.open("mailto:" + email_address)
+    webbrowser.open("mailto:" + email_address + "?subject=" + subject)
 
-def open_mail_patrik():
+def open_mail_patrik(subject):
     email_address = "patrik.padar@gmail.com"
-    webbrowser.open("mailto:" + email_address)
+    webbrowser.open("mailto:" + email_address + "?subject=" + subject)
 
 #INFO MEGNYITÁSA GUI-BÓL
 def inftab():
     subprocess.Popen(["python", "gui1.py"])
+
+def notfound():
+    filepath = "404.html"
+    if os.path.exists(filepath):
+        webbrowser.open("file:///" + os.path.abspath(filepath))
+    else:
+        print("A 404.html fájl nem található.")
+
+

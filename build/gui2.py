@@ -50,11 +50,12 @@ image_1 = canvas.create_image(
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
 button_1 = Button(
-    image=button_image_1,
+    text=all_random_numbers[0],
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_1 clicked"),
-    relief="flat"
+    relief="flat",
+    color=*asked color*;
 )
 button_1.place(
     x=58.0,

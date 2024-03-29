@@ -204,7 +204,8 @@ button_2 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_2 clicked"),
-    relief="flat"
+    relief="flat",
+    font="RacingSansOne-Regular"
 )
 button_2.place(
     x=408.0,

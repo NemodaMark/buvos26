@@ -179,6 +179,10 @@ canvas.create_rectangle(
     fill="#202020",
     outline="")
 
+def open_gui2(color, text):
+    import gui2
+    gui2.display_info(color, text)
+
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
 button_1 = Button(
@@ -186,7 +190,7 @@ button_1 = Button(
     background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_1 clicked"),
+    command=lambda: open_gui2('#FFD166', all_random_numbers[0][0]),  # Pass color and text,
     relief="flat"
 )
 button_1.place(

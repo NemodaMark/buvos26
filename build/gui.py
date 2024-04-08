@@ -186,13 +186,14 @@ def open_gui2(color, text):
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
 button_1 = Button(
-    text=all_random_numbers[0][0],
+    text=str(all_random_numbers[0][0]),
     background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: open_gui2('#FFD166', all_random_numbers[0][0]),  # Pass color and text,
+    command=lambda: open_gui2('#FFD166', str(all_random_numbers[0])),  # Pass color and text,
     relief="flat"
 )
+
 button_1.place(
     x=285.0,
     y=142.0,

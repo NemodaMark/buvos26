@@ -29,6 +29,7 @@ def display_info(color, text):
 
     image_image_1 = PhotoImage(file=relative_to_assets("image_1.png"))
     image_1 = canvas.create_image(400.0, 43.0, image=image_image_1)
+
     button_1 = Button(
         window,
         text=text,
@@ -48,11 +49,11 @@ window.overrideredirect(True)
 
 button_1 = Button(
     window,
-    text=text,
+    text="Sample Text",
     borderwidth=0,
     highlightthickness=0,
     relief="flat",
-    color=color  # Default color
+    bg="#FFD166"  # Default color
 )
     button_1.place(
         x=58.0,

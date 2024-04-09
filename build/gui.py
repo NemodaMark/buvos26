@@ -23,7 +23,7 @@ window = Tk()
 window.geometry("769x705")
 window.configure(bg = "#202020")
 window.overrideredirect(True)
-icon = tkinter.PhotoImage(file="./assets/favicon.png")
+icon = tkinter.PhotoImage(file="assets/favicon.png")
 icon = window.iconphoto(True, icon) #Ikonfotó definiálása
 
 import subprocess

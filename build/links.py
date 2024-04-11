@@ -5,46 +5,55 @@ import os  # 404 Page-hez
 
 def open_github_mark():
     url = "https://github.com/NemodaMark"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
 def open_github_levente():
     url = "https://github.com/HaLTeX1"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
 def open_github_brigi():
     url = "https://github.com/brigii07"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
 def open_fb_mark():
     url = "https://www.facebook.com/nemoda.mark"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
 def open_fb_patrik():
     url = "https://www.facebook.com/profile.php?id=100012008566062"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
 def open_fb_levente():
     url = "https://www.facebook.com/rez.levente.7/"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
 def open_fb_brigi():
     url = "https://www.facebook.com/sz.brigi.b"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
 def open_lnkd_mark():
     url = "https://www.linkedin.com/in/márk-nemoda-869ab3263/"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
 def open_lnkd_levente():
     url = "https://www.linkedin.com/in/réz-levente-157053290/"
+    print("Külső hivatkozás megnyitása:", url)
     webbrowser.open_new(url)
 
 
@@ -79,4 +88,4 @@ def notfound():
     if os.path.exists(filepath):
         webbrowser.open("file:///" + os.path.abspath(filepath))
     else:
-        print("A 404.html fájl nem található.")
+        print(f"A {filepath} fájl nem található.")

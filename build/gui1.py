@@ -65,7 +65,7 @@ canvas.create_text(
     anchor="nw",
     text="Nemoda Márk",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 24 * -1)
+    font=("RacingSansOne-Regular", 24 * -1)
 )
 
 canvas.create_text(
@@ -74,7 +74,7 @@ canvas.create_text(
     anchor="nw",
     text="mark.nemoda@outlook.com",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 15 * -1)
+    font=("RacingSansOne-Regular", 15 * -1)
 )
 
 canvas.create_text(

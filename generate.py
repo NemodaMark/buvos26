@@ -1,5 +1,6 @@
 import random
 
+
 def generatenumbers():
     numbers = []
     while True:
@@ -8,6 +9,7 @@ def generatenumbers():
             break
     return numbers
 
+
 for i in range(3):
     random_numbers = generatenumbers()
-    print("Random numbers with sum 26 (Invite", i+1, "):", random_numbers)
+    print("Random numbers with sum 26 (Invite", i + 1, "):", random_numbers)

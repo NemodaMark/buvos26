@@ -5,7 +5,6 @@ import tkinter
 
 
 from pathlib import Path
-
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
@@ -22,15 +21,15 @@ def relative_to_assets(path: str) -> Path:
 window = Tk()
 window.geometry("769x705")
 window.configure(bg = "#202020")
-window.overrideredirect(True)
-icon = tkinter.PhotoImage(file="assets/favicon.png")
-icon = window.iconphoto(True, icon) #Ikonfotó definiálása
+window.overrideredirect(False)
+#icon = tkinter.PhotoImage(file="./assets/favicon.png")
+#icon = window.iconphoto(True, icon) #Ikonfotó definiálása
 
 import subprocess
 import re
 
 # Replace 'your_script.py' with the path to your Python file
-script_path = '../generating/26-random.py'
+script_path = 'generating/26-random.py'
 
 # List to store all sets of random numbers
 all_random_numbers = []
@@ -183,15 +182,15 @@ def open_gui2(color, text):
     import gui2
     gui2.display_info(color, text)
 
-button_image_1 = PhotoImage(
-    file=relative_to_assets("button_1.png"))
 button_1 = Button(
     text=all_random_numbers[0][0],
     background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
     command=lambda: open_gui2('#FFD166', all_random_numbers[0][0]),  # Pass color and text,
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
+
 )
 button_1.place(
     x=285.0,
@@ -200,8 +199,8 @@ button_1.place(
     height=100.0
 )
 
-button_image_2 = PhotoImage(
-    file=relative_to_assets("button_2.png"))
+#button_image_2 = PhotoImage(
+   # file=relative_to_assets("button_2.png"))
 button_2 = Button(
     text=all_random_numbers[0][1],
     background='#FFD166',

@@ -8,9 +8,9 @@ def generate_numbers():
                         valid_combinations.append([num1, num2, num3, num4])
     return valid_combinations
 
+
 all_possible_combinations = generate_numbers()
 
 print("All possible combinations with sum 26:")
 for i, combo in enumerate(all_possible_combinations, 1):
     print(f"Combination {i}: {combo}")
-

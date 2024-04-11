@@ -27,9 +27,11 @@ window.overrideredirect(False)
 
 import subprocess
 import re
+import os
 
 # Replace 'your_script.py' with the path to your Python file
-script_path = 'generating/26-random.py'
+script_path = '../generating/26-random.py'
+print("Current working directory:", os.getcwd())
 
 # List to store all sets of random numbers
 all_random_numbers = []

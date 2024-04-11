@@ -30,7 +30,7 @@ import re
 import os
 
 # Replace 'your_script.py' with the path to your Python file
-script_path = '../generating/26-random.py'
+script_path = 'generating/26-random.py'
 print("Current working directory:", os.getcwd())
 
 # List to store all sets of random numbers
@@ -210,7 +210,7 @@ button_2 = Button(
     highlightthickness=0,
     command=lambda: print("button_2 clicked"),
     relief="flat",
-    font="RacingSansOne-Regular"
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_2.place(
     x=408.0,
@@ -227,7 +227,8 @@ button_3 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_3 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_3.place(
     x=285.0,
@@ -244,7 +245,8 @@ button_4 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_4 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_4.place(
     x=408.0,
@@ -261,7 +263,8 @@ button_5 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_5 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_5.place(
     x=285.0,
@@ -278,7 +281,8 @@ button_6 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_6 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_6.place(
     x=285.0,
@@ -295,7 +299,8 @@ button_7 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_7 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_7.place(
     x=408.0,
@@ -312,7 +317,8 @@ button_8 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_8 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_8.place(
     x=408.0,
@@ -329,7 +335,8 @@ button_9 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_9 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_9.place(
     x=531.0,
@@ -346,7 +353,8 @@ button_10 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_10 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_10.place(
     x=531.0,
@@ -363,7 +371,8 @@ button_11 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_11 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_11.place(
     x=162.0,
@@ -380,7 +389,8 @@ button_12 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_12 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_12.place(
     x=162.0,

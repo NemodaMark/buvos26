@@ -345,6 +345,7 @@ button_9.place(
     height=100.0
 )
 
+
 button_image_10 = PhotoImage(
     file=relative_to_assets("button_10.png"))
 button_10 = Button(
@@ -406,7 +407,8 @@ button_13 = Button(
     borderwidth=0,
     highlightthickness=0,
     command=lambda: print("button_13 clicked"),
-    relief="flat"
+    relief="flat",
+    font=("RacingSansOne-Regular",32*-1)
 )
 button_13.place(
     x=695.0,

@@ -56,7 +56,7 @@ canvas.create_text(
     anchor="nw",
     text="Tagjaink:",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 24 * -1)
+    font=("RacingSansOne-Regular", 24 * -1)
 )
 
 canvas.create_text(
@@ -83,7 +83,7 @@ canvas.create_text(
     anchor="nw",
     text="patrik.padar@gmail.com",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 15 * -1)
+    font=("RacingSansOne-Regular", 15 * -1)
 )
 
 canvas.create_text(
@@ -92,7 +92,7 @@ canvas.create_text(
     anchor="nw",
     text="farkasberta14@gmail.com",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 15 * -1)
+    font=("RacingSansOne-Regular", 15 * -1)
 )
 
 canvas.create_text(
@@ -101,7 +101,7 @@ canvas.create_text(
     anchor="nw",
     text="info@rezlevente.hu",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 15 * -1)
+    font=("RacingSansOne-Regular", 15 * -1)
 )
 
 canvas.create_text(
@@ -110,7 +110,7 @@ canvas.create_text(
     anchor="nw",
     text="Patrik Pádár",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 24 * -1)
+    font=("RacingSansOne-Regular", 24 * -1)
 )
 
 canvas.create_text(
@@ -119,7 +119,7 @@ canvas.create_text(
     anchor="nw",
     text="Réz Levente",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 24 * -1)
+    font=("RacingSansOne-Regular", 24 * -1)
 )
 
 canvas.create_text(
@@ -128,7 +128,7 @@ canvas.create_text(
     anchor="nw",
     text="Szabó Brigitta",
     fill="#FFCF00",
-    font=("RacingSansOne Regular", 24 * -1)
+    font=("RacingSansOne-Regular", 24 * -1)
 )
 
 image_image_2 = PhotoImage(

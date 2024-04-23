@@ -1,6 +1,6 @@
 
 # Bűvös26 
-A projekt a Gábor Dénes Egyetem Problémamegoldás-és algoritmusok tárgyára készült. 
+A projekt a Gábor Dénes Egyetem Mérnökinformatikus szakának (*MEIN-AN07*) Problémamegoldás-és algoritmusok tárgyára készült. 
 
 # Működési elv
 Az képernyőn megjelenő azonos színű számoknak minden esetben a 26-os értéket szükséges visszaadnia, generálástól függetlenül.

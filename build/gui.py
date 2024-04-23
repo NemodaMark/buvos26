@@ -29,6 +29,33 @@ import subprocess
 import re
 import os
 
+def regenerate_numbers():
+    all_random_numbers.clear()  # Törli az előzőleg generált számokat
+    for i in range(3):
+        result = subprocess.run(['python', script_path], capture_output=True, text=True)
+
+        # Ellenőrizzük, hogy a script sikeresen lefutott-e
+        if result.returncode == 0:
+            match = re.search(r'\[(.*?)\]', result.stdout)
+            if match:
+                random_numbers_str = match.group(1)
+                random_numbers = tuple(int(num) for num in random_numbers_str.split(','))
+                all_random_numbers.append(random_numbers)
+    # Frissítsük a gombok szövegét az új számokkal
+    button_1.config(text=all_random_numbers[0][0])
+    button_2.config(text=all_random_numbers[0][1])
+    button_3.config(text=all_random_numbers[0][2])
+    button_4.config(text=all_random_numbers[0][3])
+    button_5.config(text=all_random_numbers[1][0])
+    button_6.config(text=all_random_numbers[1][1])
+    button_7.config(text=all_random_numbers[1][2])
+    button_8.config(text=all_random_numbers[1][3])
+    button_9.config(text=all_random_numbers[2][0])
+    button_10.config(text=all_random_numbers[2][1])
+    button_11.config(text=all_random_numbers[2][2])
+    button_12.config(text=all_random_numbers[2][3])
+
+
 # Replace 'your_script.py' with the path to your Python file
 script_path = 'generating/26-random.py'
 print("Current working directory:", os.getcwd())
@@ -406,7 +433,7 @@ button_13 = Button(
     image=button_image_13,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_13 clicked"),
+    command=lambda: regenerate_numbers(),
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )

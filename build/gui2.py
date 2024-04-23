@@ -15,7 +15,6 @@ def display_info(color, text):
     window = tk.Toplevel()
     window.geometry("800x396")
     window.configure(bg="#202020")
-    window.overrideredirect(True)
     # icon = tk.PhotoImage(file="./assets/favicon.png")
     # icon = window.iconphoto(True, icon)  # Set window icon
 
@@ -35,99 +34,59 @@ def display_info(color, text):
 
     button_1 = Button(
         window,
-        text=text,
+        text=text[0],
         borderwidth=0,
         highlightthickness=0,
         relief="flat",
-        bg=color
+        bg=color,
+        font = ("RacingSansOne-Regular", 32 * -1)
     )
     button_1.place(x=58.0, y=178.0, width=99.0, height=100.0)
 
-    # Other buttons...
+    button_2 = Button(
+        window,
+        text=text[1],
+        borderwidth=0,
+        highlightthickness=0,
+        relief="flat",
+        bg=color,
+        font = ("RacingSansOne-Regular", 32 * -1)
+    )
+    button_2.place(x=253.0,y=178.0,width=99.0,height=100.0)
 
+    button_3 = Button(
+        window,
+        text=text[2],
+        borderwidth=0,
+        highlightthickness=0,
+        relief="flat",
+        bg=color,
+        font=("RacingSansOne-Regular", 32 * -1)
+    )
+    button_3.place(x=448.0,y=178.0,width=99.0,height=100.0)
 
-window = tk.Tk()
-window.geometry("800x396")
-window.configure(bg="#202020")
-window.overrideredirect(True)
+    button_4 = Button(
+        window,
+        text=text[3],
+        borderwidth=0,
+        highlightthickness=0,
+        relief="flat",
+        bg=color,
+        font=("RacingSansOne-Regular", 32 * -1)
+    )
+    button_4.place(x=643.0,y=178.0,width=99.0,height=100.0)
 
-button_1 = Button(
-    window,
-    text="Sample Text",
-    borderwidth=0,
-    highlightthickness=0,
-    relief="flat",
-    bg="#FFD166"  # Default color
-)
-button_1.place(
-    x=58.0,
-    y=178.0,
-    width=99.0,
-    height=100.0
-)
+    button_image_5 = PhotoImage(
+        file=relative_to_assets("button_5.png"))
+    button_5 = Button(
+        window,
+        image=button_image_5,
+        borderwidth=0,
+        highlightthickness=0,
+        command=lambda: window.destroy(),
+        relief="flat"
+    )
+    button_5.place(x=762.0,y=6.0,width=30.0,height=30.0)
 
-button_image_2 = PhotoImage(
-    file=relative_to_assets("button_2.png"))
-button_2 = Button(
-    image=button_image_2,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_2 clicked"),
-    relief="flat"
-)
-button_2.place(
-    x=253.0,
-    y=178.0,
-    width=99.0,
-    height=100.0
-)
-
-button_image_3 = PhotoImage(
-    file=relative_to_assets("button_3.png"))
-button_3 = Button(
-    image=button_image_3,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_3 clicked"),
-    relief="flat"
-)
-button_3.place(
-    x=448.0,
-    y=178.0,
-    width=99.0,
-    height=100.0
-)
-
-button_image_4 = PhotoImage(
-    file=relative_to_assets("button_4.png"))
-button_4 = Button(
-    image=button_image_4,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_4 clicked"),
-    relief="flat"
-)
-button_4.place(
-    x=643.0,
-    y=178.0,
-    width=99.0,
-    height=100.0
-)
-
-button_image_5 = PhotoImage(
-    file=relative_to_assets("button_5.png"))
-button_5 = Button(
-    image=button_image_5,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: sys.exit(),
-    relief="flat"
-)
-button_5.place(
-    x=762.0,
-    y=6.0,
-    width=30.0,
-    height=30.0
-)
-window.resizable(False, False)
-window.mainloop()
+    window.resizable(False, False)
+    window.mainloop()

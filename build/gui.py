@@ -22,8 +22,8 @@ window = Tk()
 window.geometry("769x705")
 window.configure(bg = "#202020")
 window.overrideredirect(False)
-#icon = tkinter.PhotoImage(file="./assets/favicon.png")
-#icon = window.iconphoto(True, icon) #Ikonfotó definiálása
+icon = tkinter.PhotoImage(file="./assets/favicon.png")
+icon = window.iconphoto(True, icon) #Ikonfotó definiálása
 
 import subprocess
 import re
@@ -216,7 +216,7 @@ button_1 = Button(
     background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: open_gui2('#FFD166', all_random_numbers[0][0]),  # Pass color and text,
+    command=lambda: open_gui2('#FFD166', all_random_numbers[0]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 
@@ -235,7 +235,7 @@ button_2 = Button(
     background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_2 clicked"),
+    command=lambda: open_gui2('#FFD166', all_random_numbers[0]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -253,7 +253,7 @@ button_3 = Button(
     background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_3 clicked"),
+    command=lambda: open_gui2('#FFD166', all_random_numbers[0]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -271,7 +271,7 @@ button_4 = Button(
     background='#FFD166',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_4 clicked"),
+    command=lambda: open_gui2('#FFD166', all_random_numbers[0]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -289,7 +289,7 @@ button_5 = Button(
     background='#EF476F',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_5 clicked"),
+    command=lambda: open_gui2('#EF476F', all_random_numbers[1]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -307,7 +307,7 @@ button_6 = Button(
     background='#EF476F',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_6 clicked"),
+    command=lambda: open_gui2('#EF476F', all_random_numbers[1]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -325,7 +325,7 @@ button_7 = Button(
     background='#EF476F',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_7 clicked"),
+    command=lambda: open_gui2('#EF476F', all_random_numbers[1]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -343,7 +343,7 @@ button_8 = Button(
     background='#EF476F',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_8 clicked"),
+    command=lambda: open_gui2('#EF476F', all_random_numbers[1]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -361,7 +361,7 @@ button_9 = Button(
     background='#06D6A0',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_9 clicked"),
+    command=lambda: open_gui2('#06D6A0', all_random_numbers[2]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -380,7 +380,7 @@ button_10 = Button(
     background='#06D6A0',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_10 clicked"),
+    command=lambda: open_gui2('#06D6A0', all_random_numbers[2]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -398,7 +398,7 @@ button_11 = Button(
     background='#06D6A0',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_11 clicked"),
+    command=lambda: open_gui2('#06D6A0', all_random_numbers[2]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )
@@ -416,7 +416,7 @@ button_12 = Button(
     background='#06D6A0',
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_12 clicked"),
+    command=lambda: open_gui2('#06D6A0', all_random_numbers[2]),  # Pass color and text,
     relief="flat",
     font=("RacingSansOne-Regular",32*-1)
 )

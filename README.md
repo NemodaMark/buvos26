@@ -2,6 +2,8 @@
 # Bűvös26 
 A projekt a Gábor Dénes Egyetem Problémamegoldás-és algoritmusok tárgyára készült. 
 
+# Működési elv
+Az képernyőn megjelenő azonos színű számoknak minden esetben a 26-os értéket szükséges visszaadnia, generálástól függetlenül.
 
 
 
@@ -27,6 +29,11 @@ pip install random
 ```
 
 
-## Egyéb felhasznált állományok
+## Egyéb felhasznált állományok, weboldalak
 
 [retro-404](https://github.com/gaoryrt/retro-404)
+
+[Tkinter-Designer](https://github.com/ParthJadhav/Tkinter-Designer)
+
+[Figma](https://www.figma.com/)
+

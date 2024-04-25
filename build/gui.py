@@ -24,6 +24,7 @@ window.configure(bg = "#202020")
 window.overrideredirect(False)
 icon = tkinter.PhotoImage(file="./assets/favicon.png")
 icon = window.iconphoto(True, icon) #Ikonfotó definiálása
+window.title("Bűvös26 - GDE")
 
 import subprocess
 import re
